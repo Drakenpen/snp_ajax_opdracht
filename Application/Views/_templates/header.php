@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
+    <script src="<?php echo URL; ?>js/test.js"></script>
     <link href="<?php echo URL; ?>css/bootstrap.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/bf8ab24a40.js"></script>
 

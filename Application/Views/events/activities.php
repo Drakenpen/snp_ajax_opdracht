@@ -5,7 +5,7 @@
 <hr class="featurette-divider">
 
 	   <?php foreach ($activities as $activity) { ?>
-	    <div class="featurette">
+	    <div class="cakebox">
 	    	<form action="<?php echo URL; ?>events/selectActivity" method="POST" onsubmit="return confirm('Weet je het zeker?');">  
 	    	<div class="img" style='background-image:url(<?php if (isset($event->small_banner_url)) echo ($event->small_banner_url); ?>)'>  	   
 		    	<div class="img2">
@@ -21,6 +21,11 @@
 		    </form>
 		</div>
 		<?php } ?>
+<form id="foo">
+    <label for="bar">A bar</label>
+    <input id="id" name="id" type="text" value="<?php if (isset($event->id)) echo htmlspecialchars($event->id, ENT_QUOTES, 'UTF-8'); ?>" />
 
+    <input type="submit" value="Send" />
+</form>
 <hr class="featurette-divider">
 
